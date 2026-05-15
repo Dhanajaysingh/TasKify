@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="main w-full min-h-screen bg-zinc-900 p-10">
+    <form action="/edit" method="post">
+        <input class="block w-1/4 rounded-lg outline-none px-5 py-2 bg-zinc-800 text-white" type="text" placeholder="Previous name..." name="previousName" value="<%= filename %>">
+        <input class="block w-1/4 mt-2 rounded-lg outline-none px-5 py-2 resize-none bg-zinc-800 text-white mt-2" type="text" placeholder="New name..." name="newName" >
+        <input class="mt-2 bg-green-600 px-5 py-2 rounded-md text-white" type="submit" value="Update name">
+        <a href="/" class="mt-2 bg-blue-600 px-5 py-2 rounded-md text-white inline-block ml-2"> Go Back</a>
+    </form>
+    <!-- <input class="mt-2 bg-blue-600 px-4  text-white rounded-md" type="submit" value="Back" onclick="window.history.back()"> -->
+    </div> 
+</body>
+</html>

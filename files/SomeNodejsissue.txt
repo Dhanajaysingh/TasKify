@@ -1,0 +1,1 @@
+Something happened it was using the anothe router module insteadof the express router module so it was not parsingehe req.body.details and givign error in the stack.
