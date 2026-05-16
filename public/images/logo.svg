@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="taskifyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Modern Gradient Background -->
+  <rect width="200" height="200" rx="40" fill="url(#taskifyGrad)" opacity="0.08"/>
+  
+  <!-- Main Container with rounded corners -->
+  <g filter="url(#shadow)">
+    <!-- Primary Shape: Rounded Square Background -->
+    <rect x="40" y="40" width="120" height="120" rx="24" fill="url(#taskifyGrad)" opacity="0.15" stroke="url(#taskifyGrad)" stroke-width="2"/>
+    
+    <!-- Stylized Checkmark with Task List elements -->
+    <g transform="translate(100, 100)">
+      <!-- Three horizontal task bars on left -->
+      <rect x="-28" y="-32" width="24" height="5" rx="2.5" fill="#3b82f6" opacity="0.7"/>
+      <rect x="-28" y="-18" width="24" height="5" rx="2.5" fill="#3b82f6" opacity="0.7"/>
+      <rect x="-28" y="-4" width="24" height="5" rx="2.5" fill="#3b82f6" opacity="0.7"/>
+      
+      <!-- Large bold checkmark on right -->
+      <circle cx="20" cy="-8" r="26" fill="none" stroke="#10b981" stroke-width="4" opacity="0.9"/>
+      
+      <!-- Checkmark mark -->
+      <path d="M 10 -8 L 18 2 L 32 -18" fill="none" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+      
+      <!-- Accent dots -->
+      <circle cx="-30" cy="24" r="3" fill="#10b981" opacity="0.6"/>
+      <circle cx="-20" cy="28" r="2" fill="#3b82f6" opacity="0.6"/>
+    </g>
+  </g>
+  
+  <!-- Subtle border glow -->
+  <rect x="40" y="40" width="120" height="120" rx="24" fill="none" stroke="#3b82f6" stroke-width="1" opacity="0.3"/>
+</svg>
